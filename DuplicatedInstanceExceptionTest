@@ -1,0 +1,10 @@
+En este test creamos un objeto tipo ResublaePool y un objeto tipo Resuble, a continuación se comprueba que al intentar liberar dos veces el mismo elemento Reusable de un
+objeto ReusablePool salta la excepción DuplicatedInstanceException.
+
+Test satisfactorio para la clase DuplicatedInstanceException.java, mostramos a continuación el mensaje mostgrado en eclipse al realizar la prueba:
+
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DuplicatedInstanceExceptionTest" project="PracticaC01" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="ubu.gii.dass.test.c01.DuplicatedInstanceExceptionTest" time="0.0">
+    <testcase name="testDuplicatedInstanceException" classname="ubu.gii.dass.test.c01.DuplicatedInstanceExceptionTest" time="0.0"/>
+  </testsuite>
+</testrun>
