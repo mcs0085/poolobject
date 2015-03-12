@@ -1,0 +1,9 @@
+En este test creamos un objeto tipo ReusablePool, cuando se crea se hace con dos elementos, por lo tanto en este test se comprueba que al intentar sacar tres elementos de una objeto ReusablePool al tercer elemento salta la excepción NotFreeInstanceException.
+
+Test satisfactorio para la clase NotFreeInstanceException.java, mostramos a continuación el mensaje mostgrado en eclipse al realizar el test:
+
+<?xml version="1.0" encoding="UTF-8"?><testrun name="NotFreeInstanceExceptionTest" project="PracticaC01" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="ubu.gii.dass.test.c01.NotFreeInstanceExceptionTest" time="0.0">
+    <testcase name="testNotFreeInstanceException" classname="ubu.gii.dass.test.c01.NotFreeInstanceExceptionTest" time="0.0"/>
+  </testsuite>
+</testrun>
