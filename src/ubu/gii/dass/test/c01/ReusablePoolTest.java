@@ -1,56 +1,38 @@
-/**
- * 
- */
 package ubu.gii.dass.test.c01;
 
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
+import junit.framework.TestCase;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import ubu.gii.dass.c01.*;
 
 /**
- * @author alumno
- *
+ * Test para la clase ReusablePool
+ * 
+ * @Author Manuel Casado
+ * @Author Adrian Gil
  */
-public class ReusablePoolTest {
+public class ReusablePoolTest extends TestCase{
 
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@After
-	public void tearDown() throws Exception {
-	}
-
+	public ReusablePool poolPrueba;
+	public Reusable elemento;
+	
 	/**
 	 * Test method for {@link ubu.gii.dass.c01.ReusablePool#getInstance()}.
 	 */
-	@Test
-	public void testGetInstance() {
-		fail("Not yet implemented");
-	}
-
-	/**
-	 * Test method for {@link ubu.gii.dass.c01.ReusablePool#acquireReusable()}.
-	 */
-	@Test
-	public void testAcquireReusable() {
-		fail("Not yet implemented");
-	}
-
-	/**
-	 * Test method for {@link ubu.gii.dass.c01.ReusablePool#releaseReusable(ubu.gii.dass.c01.Reusable)}.
-	 */
-	@Test
-	public void testReleaseReusable() {
-		fail("Not yet implemented");
-	}
-
+	@org.junit.Test
+	public void testReusablePool() {
+		poolPrueba=ReusablePool.getInstance();
+		assertNotNull("Intentamos intaciar un ReusablePool", poolPrueba);
+		try {
+			elemento=poolPrueba.acquireReusable();			
+			assertNotNull("Comprobamos si podemos adquirir un elemento del objeto ReusablePool", elemento);
+		} catch (NotFreeInstanceException e) {
+			fail();
+		}
+		try {
+			poolPrueba.releaseReusable(elemento);
+		} catch (DuplicatedInstanceException e) {
+			fail();
+		}
+	}	
 }
