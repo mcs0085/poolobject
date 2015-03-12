@@ -1,0 +1,9 @@
+En este test comoprobamos que podemos crear un objeto tipo "Client", que podemos acceder a el y que no es nulo. 
+
+Test satisfactorio para la clase Client.java, mostramos a continuación del mensaje de Eclipse al realizar el test:  
+
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ClientTest" project="PracticaC01" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="ubu.gii.dass.test.c01.ClientTest" time="0.0">
+    <testcase name="testClient" classname="ubu.gii.dass.test.c01.ClientTest" time="0.0"/>
+  </testsuite>
+</testrun>
