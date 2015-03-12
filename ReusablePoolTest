@@ -1,0 +1,12 @@
+Creamos un objeto tipo ReusablePool y otro objeto tipo Reusable para poder hacer los tres pruebas sobre la clase ReusablePool:
+  1) Que al crear un objeto ResublePool este no sea nulo.
+  2) Que al adquirir un elemento Reusable de un objeto ReusablePool no salte una excepción.
+  3) Que al liberar un elemento Reusable de un objeto ReusablePool no salte una excepción. 
+  
+Test satisfactorio para la clase ResublePool.java, mostramos a continuación el mensaje mostrado por eclipse al realizar la prueba: 
+
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReusablePoolTest (1)" project="PracticaC01" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="ubu.gii.dass.test.c01.ReusablePoolTest" time="0.0">
+    <testcase name="testReusablePool" classname="ubu.gii.dass.test.c01.ReusablePoolTest" time="0.0"/>
+  </testsuite>
+</testrun>
